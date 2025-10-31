@@ -20,11 +20,11 @@ jobs:
           dotnet-version: '8.0'
 
       - name: Restore dependencies
-        run: dotnet restore ./WebApplication2/WebApplication2.csproj
+        run: dotnet restore ./AspWebApi.csproj
 
       - name: Build project
-        run: dotnet build ./WebApplication2/WebApplication2.csproj --no-restore --configuration Release
+        run: dotnet build ./AspWebApi.csproj --no-restore --configuration Release
 
       - name: Run tests
-        run: dotnet test ./WebApplication2/WebApplication2.csproj --no-restore --configuration Release
+        run: dotnet test ./AspWebApi.csproj --no-restore --configuration Release
     
